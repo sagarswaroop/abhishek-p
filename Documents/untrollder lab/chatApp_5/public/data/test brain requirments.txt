@@ -1,0 +1,34 @@
+u«Zµìmþ™ZŠvÚ±î¸Register
+    Full Name.
+    Email id.
+    phone no(optional).
+    password:
+
+login:
+    Email id:
+    password;
+
+forgot password:
+    Email id.
+
+Dashboard:
+    top:
+        logut
+            save all quesitons.
+        welcome user
+    
+    center:
+       top
+        search.
+        add quesitons.
+            queston no.
+            queston Name:
+            optionas*4
+            save ro cancel
+    
+    left side:
+        show list of quesitons.
+        set quesitons time.
+        about us
+        
+

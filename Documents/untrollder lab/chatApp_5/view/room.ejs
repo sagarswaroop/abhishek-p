@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js'>
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script defer src='./js/script.js'></script>
+
+</head>
+
+<body>
+    <div id="user">
+        <div id="name">sagar</div>
+    </div>
+    <div id="user">
+        <div id="name">kumar</div>
+    </div>
+    <div id="users">
+        <ul>
+            <li id="sagar">Sagar</li>
+            <li id="vijay">vijay</li>
+            <li id="Denish">Denish</li>
+        </ul>
+    </div>
+    <div id="message-container">
+        <img src="./images/bg1.jpg" alt=" wallpaper" class="img">
+        <a href="../data/git commands.txt" download>first file</a>
+        <video class="img" controls>
+            <source src="./vedio/movie.mp4" type="video/mp4">
+           <source src="movie.ogg" type="video/ogg">
+        </video>
+
+    </div>
+    <form id="message-sent">
+        <input type="text" id="message">
+        <input type="button" value="send" id="message-send">
+    </form>
+    <div id="files">
+        <label for="">Select image</label>
+        <input type="file" name="images" id="image" accept="images/*">
+    </div>
+    <hr>
+    <div id="files">
+        <form id="uploadfile" enctype="multipart/form-data">
+            <label for="">select file</label>
+            <input type="file" name="file" id="file">
+            <input type="submit" value="submit" id="filesubmit">
+        </form>
+    </div>
+
+    <script>
+        $('form').submit(function(e) {
+            e.preventDefault();
+            $.post('/upload', $('uploadfile').formData), (res) => {
+                console.log(res)
+            }
+        })
+    </script>
+
+    <button onclick="callMe()">send data</button>
+
+
+</body>
+
+</html>

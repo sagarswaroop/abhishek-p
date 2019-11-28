@@ -1,0 +1,11 @@
+u«Zµìmþ™ZŠvÚ±î¸User is not registring:
+
+http://localhost:1234/
+
+{"name":"chinnu", "userid":"chinnu@gmail.com", "password":"chinu123", "contactno":"8888888888"}
+
+
+node mailer:
+errro : smtp-connection\index.js:781:19);
+
+

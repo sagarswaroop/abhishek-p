@@ -1,0 +1,45 @@
+#message-container {
+    border: 2px solid grey;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    display: inline-block;
+    left: 300px;
+}
+
+#message-sent {
+    left: 300px;
+    position: relative;
+}
+
+#message {
+    width: 450px;
+    margin: 10px 0px;
+}
+
+#files {
+    position: relative;
+    left: 300px;
+    margin: 10px 0px;
+}
+
+.img {
+    height: 100px;
+    width: 150px;
+    display: block;
+    margin: 10px 2px;
+}
+
+#users {
+    border: 2px solid grey;
+    height: 500px;
+    width: 120px;
+    position: absolute;
+    left: 180px;
+    display: inline-block;
+}
+
+#users ul li {
+    text-decoration: none;
+    cursor: pointer;
+}

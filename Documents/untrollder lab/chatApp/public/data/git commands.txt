@@ -1,0 +1,8 @@
+u«Zµìmþ™ZŠvÚ±î¸to pull request:
+	git clone "url"
+
+
+to push project:
+	git add . -> add git.
+	git commit -m "change name"->save updation.
+	git push or pull for pull the request.

@@ -1,0 +1,202 @@
+u«Zµìmþ™ZŠvÚ±î¸Mean stack:- 
+        m- mongodb.
+        E- Express JS:- it is a framework for Node JS.
+        A- Angular JS:- client side language which is use to develop single page Applications and it use MVC design patterns.
+        N- Node JS:- is a server side language and is non block model. in which it doesn't wait for the response of server and continues another process. when server sent data it use call back function.
+
+it is for full stak devloping.
+
+In MVC is every charatcter has their own defination.
+        - M: is describe as model and it keep logic.
+        - V:- is describe as View and it keep view code.
+        - C:- is describe as controller and it control and behave like a mediator wich in between model and view. appart form control does DOM.
+
+
+boostrap: - has inpult styling for html
+
+CSS: - is a inbuit stylig or a framework. in which bootstrap is use for make daynamic website.
+
+colabration mode: - is a mode in whihc a group of members work together 
+
+why colabration mode -- if we are working on a project  and every member download diffrent diffrent version of bootstrap then, these all will conflict and it will creat problem at time of colabration.
+
+Resolve the problem--
+        leader will have to create a folder which will be shareabe for all members to remove confliction problem. this is called dependency managment.
+
+dependency managment tool- it is used for manage the files. It can be download from bower io website with the name bower "https://bower.io/". it is created by tweeter and it is use for packages, frameworks, laibrarie and utilities. it manage the dependency of a project. bower brings the laibraries for the client machine. bower needs nodejs for install in machine. Bower has many modules like experes.
+
+why bower:- 
+        bower has the name of laibraries those are using in our project and it is useful because laibraries are havey so if every one has diffrent diffrent type of version of laibraries then, it will make project havy.
+
+in  other words. bower.jason keep meta information of our project.
+
+node: - has a development envirment. so, here can develop any thing. so during installation node comes with 50 thousand + laibraries. 
+
+
+
+in nodejs. it made a ecosystem. like a playstore of andorid. and node is like a andorid so it has a virey of packages as playstore has a larg of Applications.So, here bower is a module of nodejs. which is use for manage the dependency laibraries on client side machine by downloading through bower.
+
+step 1 : Download bower
+- Download nodejs msi(installer) version.
+- open cmd-> check node-v and  npm-v. if error then set the path first in advance system in computer then reopen cmd and run same commands again.
+- open terminal by going view->terminal(check terminal desn't pweor shell).
+- install bower by write below commands- 
+        npm install bower -g (g means global).
+- write commant power init (will make folder with the name bower with exteniton json). it will ask some qustion those are given below with answer.
+        name OnlineExam
+        ? description my online exam
+        ? main file
+        ? keywords online,exam
+        ? authors sgar kumar
+        ? license MIT
+        ? homepage index.html
+        ? set currently installed components as dependencies? Yes
+        ? add commonly ignored files to ignore list? Yes
+        ? would you like to mark this package as private which prevents it from being accidentally published to the registry? No
+
+        this fow when the project will go on git then google can search this.
+
+
+
+step 2:- Download bootstrap
+        - wriete command =" borow i bootstrap --save" to download bootstrap. in which it entery bower in json with the keyword --save.
+        - if give error in downloading bootstrap file with the command then download first and install github in machine.
+        - rewrite the command given above and press Enter.
+
+steps of install all dependencies tools for running download code:- 
+        - open project.
+        - write command (bower install).
+        - it will load bootstrap file and other mandatory files to run the project.
+
+
+
+theading: - it is usefull when data comes daynamicly in a table.
+tbody:- is a tag wehre daynamic data appears.
+when one type is will be used multitype then make object in a classical way.
+
+
+
+in vscode
+dir to check you are on correct project.
+
+npm i bower-g:- means installing power.
+        or 
+npm i bower -g:- for same thing.
+
+bower init. : - it will make power. jason file for dependency file.
+
+for boostrap:- 
+
+bower i boostrap --save
+
+
+bower.install - this command bring power components 
+bowere install "install tool name" --save :- entery bower in json with the keyword --save
+
+
+ajax:- 
+
+Thead: - make when rows are comming daynamicly.
+tbody:- in this tag. all daynamic row creates here.
+
+add a qustion:- 
+        - Take inpult- read all the input fieldes and store in objects.
+        now store the object inside an array.
+                e.g: var <varname> = document.getElementById("Id").value;
+        - print in a table:- read objects- and print in table.
+
+
+data + logic = model: in model it must have pure logic. it doesn't have html code.
+
+controller: it will help to intract in between model and html. it take input from html and provide to model. and give back result from model to html.
+
+Debug Steps:- 
+        - right click on project in browser.
+        - click on inspects and go source code.
+        - click on numbers wehre need to use of break point to Debug.
+        - click f10 key for debug line by line from break point
+
+
+querySelector = is similar as document.getElementById but here it works for both class and id.
+
+insertrow(): insert a row in html.
+insertcolum(): insert a colum in a row.
+closer : - is for prevetion of global initlaization.in this inner function return to outer function. 
+
+GENERATOR FUNCTION :- function run and
+ suspend but doen't kill. it is defined with * after function keyword
+        function* otp(){
+                yield 1111 // is a keyword. it resume and suspend and when call with next it resume again
+        }
+
+        function* autogenrate(){
+                var couter = 0;
+                while(true){
+                yield couter+1;
+                }
+        }
+    
+CDN - content delivery network
+
+Imidiate Invok function
+
+
+Object Oriental Programming in JavaScript : JavaScript has daynamic OOP's language. that means object can grow daynamicly 
+        - creat object:- 
+                var object = {}; // this type is call prototype method 
+        - Add in object:-
+                - boject.id = 100; // 1st type.
+                - var obj = {id:1001,name:"sagar",salary: "18000"}; //2nd type to inilize the object.
+                - function can b use as a member of object.
+                        example:- 
+                                var calculator = { add(a,b){ return a+b}, subtract(a,b){return a+b}}
+
+In JavaScript every function has prototype.So, every indirectly function is also is an object implicity.
+
+if, function print (){
+        consol.log("i am print");
+}
+
+it will treat as function. and this time if we don't return anything the function return undefine data type by default.
+        var z = print(); // here anser would be undefine.
+
+but. If,
+        var z = new print(); // here z is an object.
+
+        when use new after define a variable with new keyword is used to make object of a function prototype.
+
+
+In others words when a function is defined with function keyword it genrate a prototype and this prototype has an reffrence is object class and that's why the function in JavaScript is an object of object class. 
+        Add members in object through:- 
+                z.prototype.age = 21; // this variable is defined in object class.
+
+
+consol.dir:- provie all inside information of function.
+
+
+in JavaScript we can make a static variable if write print.salary = 88000.
+
+fousout is similar as change but ...
+
+priniciple of save:- 
+        - we have to save array
+        - array will have to store in hard disk.
+        - 
+
+on local storeage while saving: - retive value from the object--> convert value in string--> chnage in binary and save.
+
+JSON.stringigy: - use fir serialization. it is a parser which is in form of string.
+
+jason.parse():- it is for deserialization.
+
+
+call back system(function)
+        - paas an function as an argument in another function is know as call back function. This is also call pass early and call later.
+
+function can return a function:- example
+
+
+var :- is use to define local variable but without var keyword inilize a value is global variable.
+
+Note:-  if someone says code is showing then it can be hacked. in this case. answer should be that the code is only adding table showing data but authentication authorization will not be inlude in these files.
+ 

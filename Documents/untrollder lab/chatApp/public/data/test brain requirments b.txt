@@ -1,0 +1,26 @@
+u«Zµìmþ™ZŠvÚ±î¸const mongoose = require('../../config/connections');
+var Schema = mongoose.Schema;
+
+var adminSchema = new Schema({
+    'name': {
+        type: String,
+        require: true
+    },
+    'emailId': {
+        type: String,
+        require: true,
+        unique: true
+    },
+    'phone': {
+        type: String,
+        require: false
+    },
+    'password': {
+        type: String,
+        require: true
+    },
+    'details': {}
+});
+
+var adminCollection = mongoose.model('admins', adminSchema);
+module.exports = adminCollection;
